@@ -1,10 +1,15 @@
+number = list(map(int, input().split()))
+print (number)
+# number is sorted
 
+delnum = int(input())
 
-numbers = [5, 20, 30, 30, 50]
-delval = int(input('Enter the deletion value: '))
+cnt = number.count(delnum)
+# for i in range(cnt):
+# 	number.remove(delnum)
 
-# ******************************
-# Make your Code
-# ******************************
-
-print (numbers)
+while True:
+	try:
+		number.remove(delnum)
+	except: 
+		break
